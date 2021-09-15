@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/ic.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -25,6 +25,9 @@
   <link href="{{ asset('src/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
   <link href="{{ asset('src/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
   <link href="{{ asset('src/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!--icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('src/css/style.css') }}" rel="stylesheet">
@@ -71,14 +74,14 @@
                             <li><a href="#">Idea Lounge</a></li>
                             <li><a href="#">EDC Open House</a></li>
                             <li><a href="#">Startup Yatra Series</a></li>
-                            <li><a href="#">Students Associateship Programme</a></li>
+                            <li><a href="{{ route('associationship.view')}}">Students Associateship Programme</a></li>
                             <li><a href="#">Webinars and Workshops</a></li>
                 </ul>
               </li>
+                        <li><a class="nav-link scrollto" href="#about">Resources</a></li>
             </ul>
           </li>
            <li><a class="nav-link scrollto" href="#team">Contact Us</a></li>
-          <li><a class="getstarted scrollto" href="#about">Resources</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -86,6 +89,10 @@
     </div>
   </header>
 <!-- ======= End Header ===== -->
+    @show
+
+    @section('sp-css')
+
     @show
 
     @section('content')
@@ -160,6 +167,10 @@
     </div>
   </footer>
 <!-- ======= End Footer ====== -->
+
+<div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
   <!-- Vendor JS Files -->
 
 

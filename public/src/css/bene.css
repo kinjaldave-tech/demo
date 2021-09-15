@@ -1,0 +1,122 @@
+.y-us-section {
+    padding: 82px 0 82px;
+}
+
+.y-us-head {
+    text-align: center;
+    margin: 0 0 91px;
+}
+
+.y-us-title h2 {
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 0;
+    justify-content: center;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.y-us-title>p {
+    color: #777777;
+    line-height: 22px;
+}
+
+.y-us-title-border {
+    background: #3face4 none repeat scroll 0 0;
+    border-radius: 2px;
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    width: 50px;
+}
+
+.service-3 .service-box {
+    margin-bottom: 18px;
+}
+
+.service-3 .service-box .iconset {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+
+.service-3 .service-box .iconset i {
+    color: #000;
+    font-size: 44px;
+}
+
+.service-3 .service-box .y-us-content {
+    float: left;
+    width: 75%;
+}
+
+service-3 .service-box .y-us-content h4 {
+    color: #3a3a3a;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 14px 0 12px;
+    text-transform: uppercase;
+}
+
+.service-3 .service-box .y-us-content p {
+    color: #777777;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.icon {
+    color: #3face4;
+    padding: 0px;
+    font-size: 40px;
+    border: 1px solid #3face4;
+    border-radius: 100px;
+    color: #3face4;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
+
+.centered {
+    position: absolute;
+    margin-top: -230px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cont {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.deli {
+    font-size: 15px;
+}
+
+.projects_item:hover .projects_text h4 {
+    background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.projects_text {
+    text-align: center;
+    margin-top: 15px
+}
+
+.projects_text h4 {
+    font-size: 21px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    text-transform: capitalize;
+    cursor: pointer
+}

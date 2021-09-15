@@ -2,7 +2,39 @@
 
  @section('content')
 
- 
+<!-- Floating Social Media bar Starts -->
+<div class="float-sm">
+  <div class="fl-fl float-fb">
+    <i class="fa fa-facebook"></i>
+    <a href="" target="_blank"> Like us!</a>
+  </div>
+  <div class="fl-fl float-tw">
+    <i class="fa fa-twitter"></i>
+    <a href="" target="_blank">Follow us!</a>
+  </div>
+  <div class="fl-fl float-in">
+    <i class="fa fa-linkedin"></i>
+    <a href="" target="_blank">Connect us!</a>
+  </div>
+  <div class="fl-fl float-yt">
+    <i class="fa fa-youtube"></i>
+    <a href="" target="_blank">Subscribe us!</a>
+  </div>
+  <div class="fl-fl float-ig">
+    <i class="fa fa-instagram"></i>
+    <a href="" target="_blank">Follow us!</a>
+  </div>
+  <div class="fl-fl float-em">
+    <i class="fa fa-envelope"></i>
+    <a target="_blank" rel="noopener noreferrer" href="mailto:edc@paruluniversity.ac.in">Mail us!</a>
+  </div>
+  <div class="fl-fl float-tg">
+    <i class="fa fa-telegram"></i>
+    <a href="" target="_blank">Join us!</a>
+  </div>
+</div>
+<!-- Floating Social Media bar Ends -->
+
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
@@ -17,42 +49,84 @@
 
     <main id="main">
 
+<!-- We will make a simple accordian with hover effects 
+The markup will have a list with images and the titles-->
+<div class="accordian">
+	<ul>
+		<li>
+			<div class="image_title">
+				<a href="#">KungFu Panda</a>
+			</div>
+			<a href="#">
+				<img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Toy Story 2</a>
+			</div>
+			<a href="#">
+				<img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Wall-E</a>
+			</div>
+			<a href="#">
+				<img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Up</a>
+			</div>
+			<a href="#">
+				<img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+			</a>
+		</li>
+		<li>
+			<div class="image_title">
+				<a href="#">Cars 2</a>
+			</div>
+			<a href="#">
+				<img src="http://thecodeplayer.com/uploads/media/8k3N3EL.jpg"/>
+			</a>
+		</li>
+	</ul>
+</div>
+
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
-
                 <div class="row justify-content-end">
                     <div class="col-lg-11">
                         <div class="row justify-content-end">
-
                             <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-briefcase"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="110" data-purecounter-duration="1" class="purecounter"></span>
+                                    <span data-purecounter-start="0" data-purecounter-end="110" data-purecounter-duration="3" class="purecounter"></span>
                                     <p>Startup Supported</p>
                                 </div>
                             </div>
-
                             <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-gear-wide-connected"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+                                    <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="3" class="purecounter"></span>
                                     <p>Industry Connect</p>
                                 </div>
                             </div>
-
                             <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-cash-coin"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+                                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="3" class="purecounter"></span>
                                     <p>Revenue Generated</p>
                                 </div>
                             </div>
-
                             <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-person"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+                                    <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="3" class="purecounter"></span>
                                     <p>Mentors</p>
                                 </div>
                             </div>
@@ -60,20 +134,57 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="section-title">
+                    <h2>About us</h2>
+                    <p>ENTREPRENEURSHIP DEVELOPMENT CENTER</p>
+                </div>
                 <div class="row">
-
                     <div class="col-lg-6 video-box align-self-baseline" data-aos="zoom-in" data-aos-delay="100">
                         <img src="{{  asset('src/img/about.jpg') }}" class="img-fluid" alt="">
                         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
                     </div>
 
                     <div class="col-lg-6 pt-3 pt-lg-0 content">
-                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <h3>Ideation - Innovation - Incubation</h3>
+                        <p>
+                            The Entrepreneurship Development Center is one of the creative hubs at Parul University that nurtures the Entrepreneurial endeavors of all students. A team of 10 Full time Dedicated Incubation Managers are working for the Entrepreneurship Development Center to Strengthen the Regional Eco System Promoting Innovation and Entrepreneurship Culture in the University is the Key Objective of EDC.
                         </p>
-                        <ul>
+                        <!-- ======= Specials Section ======= -->
+                    <section id="specials" class="specials">
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-3">
+                            <ul class="nav nav-tabs flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active show" data-bs-toggle="tab" href="#sep-1">Vision</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#sep-2">Mission</a>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-9 mt-4 mt-lg-0">
+                            <div class="tab-content">
+                            <div class="tab-pane active show" id="sep-1">
+                                <div class="row">
+                                <div class="col-lg-12 details order-2 order-lg-1">
+                                    <h3 style="color:#ed1b23">Our Vision</h3>
+                                    <p class="fst-italic"><ul><li><i class="bx bx-check-double"></i>To prepare next generation of Entrepreneurs who would contribute to the Economic and Social Development of India.</li> <li><i class="bx bx-check-double"></i>We strive continuously towards nurturing individuals with creative minds and innovative ideas by amalgamating the entire pipeline of entrepreneurship ecosystem to empower Entrepreneurship at Parul University.</li></ul></p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sep-2">
+                                <div class="row">
+                                <div class="col-lg-12 details order-2 order-lg-1">
+                                    <h3 style="color:#ed1b23">Our Mission</h3>
+                                    <p class="fst-italic"><ul><li><i class="bx bx-check-double"></i> Inculcating a culture of innovation and an entrepreneurial spirit on the campus, through various activities and campaigns. </li><li><i class="bx bx-check-double"></i> Serving as a catalyst for entrepreneurship at Parul University by supporting and incubating entrepreneurial ideas.</li><li><i class="bx bx-check-double"></i>Creating a strong foundation of academic learning in the field of entrepreneurship not only to acquaint students with concepts but also with the application of the same.</li></ul></p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                    <!-- End Specials Section -->
+                        {{-- <ul>
                             <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                             <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
                             <li><i class="bx bx-check-double"></i> Voluptate repellendus pariatur reprehenderit corporis sint.</li>
@@ -82,260 +193,19 @@
                         <p>
                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
                             id est laborum
-                        </p>
+                        </p> --}}
                     </div>
-
                 </div>
-
             </div>
         </section>
         <!-- End About Section -->
-
-        <!-- ======= About Boxes Section ======= -->
-        <section id="about-boxes" class="about-boxes">
-            <div class="container" data-aos="fade-up">
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card">
-                            <img src="{{  asset('src/img/about-boxes-1.jpg') }}" class="card-img-top" alt="...">
-                            <div class="card-icon">
-                                <i class="ri-brush-4-line"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="">Our Mission</a></h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card">
-                            <img src="{{  asset('src/img/about-boxes-2.jpg') }}" class="card-img-top" alt="...">
-                            <div class="card-icon">
-                                <i class="ri-calendar-check-line"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="">Our Plan</a></h5>
-                                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card">
-                            <img src="{{  asset('src/img/about-boxes-3.jpg') }}" class="card-img-top" alt="...">
-                            <div class="card-icon">
-                                <i class="ri-movie-2-line"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="">Our Vision</a></h5>
-                                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- End About Boxes Section -->
-
-        <!-- ======= Clients Section ======= -->
-        <section id="clients" class="clients">
-            <div class="container" data-aos="zoom-in">
-
-                <div class="row">
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="{{  asset('src/img/clients/client-1.png') }}" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="{{  asset('src/img/clients/client-2.png') }}" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="{{  asset('src/img/clients/client-3.png') }}" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="{{  asset('src/img/clients/client-4.png') }}" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="{{  asset('src/img/clients/client-5.png') }}" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="{{  asset('src/img/clients/client-6.png') }}" class="img-fluid" alt="">
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End Clients Section -->
-
-        <!-- ======= Features Section ======= -->
-        <section id="features" class="features">
-            <div class="container" data-aos="fade-up">
-
-                <ul class="nav nav-tabs row d-flex">
-                    <li class="nav-item col-2">
-                        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
-                            <i class="ri-gps-line"></i>
-                            <h4 class="d-none d-lg-block">Vadodara Hackathon</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col-2">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
-                            <i class="ri-body-scan-line"></i>
-                            <h4 class="d-none d-lg-block">Women's Startup Meet</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col-2">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
-                            <i class="ri-sun-line"></i>
-                            <h4 class="d-none d-lg-block">Vadodara Start-up Festival</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col-2">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
-                            <i class="ri-store-line"></i>
-                            <h4 class="d-none d-lg-block">Startup Demo Day</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col-2">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-5">
-                            <i class="ri-store-line"></i>
-                            <h4 class="d-none d-lg-block">National Forum on Social Entrepreneurship</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item col-2">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-6">
-                            <i class="ri-store-line"></i>
-                            <h4 class="d-none d-lg-block">Vadodara Toycathon</h4>
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="tab-content">
-                    <div class="tab-pane active show" id="tab-1">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                
-                                <p>A nationwide initiative to provide students a platform to solve some of the pressing problems faced by Industries, Government and Other private players, and thus inculcate a culture of product innovation and a mindset of problem-solving.</p>
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="{{  asset('src/img/features-1.png') }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="tab-2">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
-                                <p>
-                                    Women's Start-up Meet is an initiative by EDC to help aspiring women entrepreneurs gain an edge by building their skills, network and gaining hands-on experience. This event will help female students gain the skills to
-                                    come up with an idea which is aligned with their strengths, interest, and passion, and can have some commercial potential.
-                                </p>
-                            
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="{{  asset('src/img/features-2.png') }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="tab-3">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                </p>
-                                
-                                <p>
-                                   Vadodara Start-up Festival is here to achieve just that by providing a platform to network and learn from the leading Entrepreneurs and Mentors. It empower the entrepreneurship qualities as well as knowledge about start-ups in Students and give opportunities to new entrepreneurs.
-                                </p>
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="{{  asset('src/img/features-3.png') }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="tab-4">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                                    id est laborum
-                                </p>
-                                <p>
-                                    Around 10-12 promising startups would be selected and provided an opportunity for pitching their propositions at Vadodara Startup Demo Day, who would be judged by an esteemed panel, which could be a precursor to the primary level screening for Vadodara Startup Studio's Launchpad & Acceleration Program.
-                                </p>
-                            
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="{{  asset('src/img/features-4.png') }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="tab-5">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
-                                <p>
-                                    "National Forum on Social Entrepreneurship(NFSE)" will bring together Experts, Policy makers, accomplished Entrepreneurs, Funding agencies under one single platform, to address & solve the pressing issues of the nation
-                                    and the social entrepreneurs trying to tackle them.
-                                </p>
-                            
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="{{  asset('src/img/features-2.png') }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                     <div class="tab-pane" id="tab-6">
-                        <div class="row">
-                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
-                                <p>
-                                    Vadodara Toycathon is a stepping stone of Mind to Market innovation challenge for Toy Industry. This Ideathon cum Hackathon is a propeller of the Atmanirbhar Bharat in Toy Sector.
-                                </p>
-                            
-                            </div>
-                            <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="{{  asset('src/img/features-2.png') }}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- End Features Section -->
-
-        <!-- ======= Services Section ======= -->
+<!-- ======= Services Section ======= -->
         <section id="services" class="services section-bg">
             <div class="container" data-aos="fade-up">
-
                 <div class="section-title">
                     <h2>Services</h2>
                     <p>Check our Services</p>
                 </div>
-
                 <div class="row" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-md-6">
                         <div class="icon-box">
@@ -394,29 +264,178 @@
                         </div>
                     </div>
                 </div>
-
             </div>
              <div class="container" data-aos="fade-up">
+        </div>
+        </section>
+        <!-- End Services Section -->
+        
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features">
+            <div class="container" data-aos="fade-up">
 
+                <div class="section-title">
+                    <h2>Events</h2>
+                    <p>Check our Flagship Events</p>
+                </div>
+
+                <ul class="nav nav-tabs row d-flex">
+                    <li class="nav-item col-2">
+                        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                            <i class="ri-gps-line"></i>
+                            <h4 class="d-none d-lg-block">Vadodara Hackathon</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item col-2">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                            <i class="ri-body-scan-line"></i>
+                            <h4 class="d-none d-lg-block">Women's Startup Meet</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item col-2">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                            <i class="ri-sun-line"></i>
+                            <h4 class="d-none d-lg-block">Vadodara Start-up Festival</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item col-2">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+                            <i class="ri-store-line"></i>
+                            <h4 class="d-none d-lg-block">Startup Demo Day</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item col-2">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-5">
+                            <i class="ri-store-line"></i>
+                            <h4 class="d-none d-lg-block">National Forum on Social Entrepreneurship</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item col-2">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-6">
+                            <i class="ri-store-line"></i>
+                            <h4 class="d-none d-lg-block">Vadodara Toycathon</h4>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="tab-1">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                                <h3>Vadodara Hackathon</h3>
+                                <p class="fst-italic">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                
+                                <p>A nationwide initiative to provide students a platform to solve some of the pressing problems faced by Industries, Government and Other private players, and thus inculcate a culture of product innovation and a mindset of problem-solving.</p>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <img src="{{  asset('src/img/flagship/fl1.png') }}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-2">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                                <h3>Women's Startup Meet</h3>
+                                <p>
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                                <p>
+                                    Women's Start-up Meet is an initiative by EDC to help aspiring women entrepreneurs gain an edge by building their skills, network and gaining hands-on experience. This event will help female students gain the skills to
+                                    come up with an idea which is aligned with their strengths, interest, and passion, and can have some commercial potential.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <img src="{{  asset('src/img/flagship/fl2.png') }}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-3">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                                <h3>Vadodara Start-up Festival</h3>
+                                <p>
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                </p>
+                                <p>
+                                   Vadodara Start-up Festival is here to achieve just that by providing a platform to network and learn from the leading Entrepreneurs and Mentors. It empower the entrepreneurship qualities as well as knowledge about start-ups in Students and give opportunities to new entrepreneurs.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <img src="{{  asset('src/img/flagship/fl3.png') }}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-4">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                                <h3>Startup Demo Day</h3>
+                                <p>
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                    id est laborum
+                                </p>
+                                <p>
+                                    Around 10-12 promising startups would be selected and provided an opportunity for pitching their propositions at Vadodara Startup Demo Day, who would be judged by an esteemed panel, which could be a precursor to the primary level screening for Vadodara Startup Studio's Launchpad & Acceleration Program.
+                                </p>
+                            
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <img src="{{  asset('src/img/flagship/fl4.png') }}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-5">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                                <h3>National Forum on Social Entrepreneurship</h3>
+                                <p>
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                                <p>
+                                    "National Forum on Social Entrepreneurship(NFSE)" will bring together Experts, Policy makers, accomplished Entrepreneurs, Funding agencies under one single platform, to address & solve the pressing issues of the nation
+                                    and the social entrepreneurs trying to tackle them.
+                                </p>
+                            
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <img src="{{  asset('src/img/flagship/fl5.png') }}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="tab-pane" id="tab-6">
+                        <div class="row">
+                            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                                <h3>Vadodara Toycathon</h3>
+                                <p>
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                                <p>
+                                    Vadodara Toycathon is a stepping stone of Mind to Market innovation challenge for Toy Industry. This Ideathon cum Hackathon is a propeller of the Atmanirbhar Bharat in Toy Sector.
+                                </p>
+                            
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 text-center">
+                                <img src="{{  asset('src/img/flagship/fl6.png') }}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Features Section -->
+                
+        <!-- ======= Testimonials Section ======= -->
+        <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>A few people of integrity can go a long way.</h2>
                     <p>Board of Governors</p>
                 </div>
-        </div>
-        </section>
-        
-       
-        <!-- End Services Section -->
-
-        <!-- ======= Testimonials Section ======= -->
-
-
-
         <section id="testimonials" class="testimonials">
-         
+        
             <div class="container" data-aos="zoom-in">
-           
-
+        
                 <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                     <div class="swiper-wrapper">
 
@@ -433,7 +452,6 @@
                             </div>
                         </div>
                         <!-- End testimonial item -->
-
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="{{ asset('src/img/testimonials/parulmaam.jpg') }}" class="testimonial-img" alt="">
@@ -447,7 +465,6 @@
                             </div>
                         </div>
                         <!-- End testimonial item -->
-
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="{{ asset('src/img/testimonials/gitikamaam.jpg') }}" class="testimonial-img" alt="">
@@ -461,7 +478,6 @@
                             </div>
                         </div>
                         <!-- End testimonial item -->
-
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="{{ asset('src/img/testimonials/komalmaam.jpg') }}" class="testimonial-img" alt="">
@@ -475,7 +491,6 @@
                             </div>
                         </div>
                         <!-- End testimonial item -->
-
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="{{ asset('src/img/testimonials/mnsir.jpg') }}" class="testimonial-img" alt="">
@@ -489,8 +504,6 @@
                             </div>
                         </div>
                         <!-- End testimonial item -->
-
-
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="{{ asset('src/img/testimonials/hssir.jpg') }}" class="testimonial-img" alt="">
@@ -504,132 +517,13 @@
                             </div>
                         </div>
                         <!-- End testimonial item -->
-
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-
             </div>
         </section>
+        </div>
         <!-- End Testimonials Section -->
-
-        <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Portfolio</h2>
-                    <p>Check our Portfolio</p>
-                </div>
-
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
-                            <li data-filter=".filter-web">Web</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="{{  asset('src/img/portfolio/portfolio-1.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <a href="{{  asset('src/img/portfolio/portfolio-1.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <img src="{{  asset('src/img/portfolio/portfolio-2.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <a href="{{  asset('src/img/portfolio/portfolio-2.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="{{  asset('src/img/portfolio/portfolio-3.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>App</p>
-                            <a href="{{  asset('src/img/portfolio/portfolio-3.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <img src="{{  asset('src/img/portfolio/portfolio-4.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 2</h4>
-                            <p>Card</p>
-                            <a href="{{  asset('src/img/portfolio/portfolio-4.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <img src=""{{  asset('src/img/portfolio/portfolio-5.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 2</h4>
-                            <p>Web</p>
-                            <a href=""{{  asset('src/img/portfolio/portfolio-5.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="{{  asset('src/img/portfolio/portfolio-6.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>App</p>
-                            <a href="{{  asset('src/img/portfolio/portfolio-6.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <img src="{{  asset('src/img/portfolio/portfolio-7.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 1</h4>
-                            <p>Card</p>
-                            <a href="{{  asset('src/img/portfolio/portfolio-7.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <img src=""{{  asset('src/img/portfolio/portfolio-8.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 3</h4>
-                            <p>Card</p>
-                            <a href=""{{  asset('src/img/portfolio/portfolio-8.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <img src="{{  asset('src/img/portfolio/portfolio-9.jpg') }}" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <a href="{{  asset('src/img/portfolio/portfolio-9.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End Portfolio Section -->
 
         <!-- ======= Team Section ======= -->
         <section id="team" class="team section-bg">
@@ -637,11 +531,10 @@
 
                 <div class="section-title">
                     <h2>Team</h2>
-                    <p>Check our Team</p>
+                    <p>Meet our Team</p>
                 </div>
 
                 <div class="row">
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up">
                             <div class="pic"><img src="{{  asset('src/img/team/jaysir.jpg') }}" class="img-fluid" alt=""></div>
@@ -655,8 +548,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="150">
                             <div class="pic"><img src="{{  asset('src/img/team/nikhilsutharsir.jpeg') }}" class="img-fluid" alt=""></div>
@@ -670,7 +561,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('src/img/team/rahulsir.jpg') }}" class="img-fluid" alt=""></div>
@@ -684,7 +574,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('src/img/team/tapeshsir.jpg') }}" class="img-fluid" alt=""></div>
@@ -698,7 +587,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('src/img/team/antony.jpg') }}" class="img-fluid" alt=""></div>
@@ -712,7 +600,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('src/img/team/nikhilsir.jpg') }}" class="img-fluid" alt=""></div>
@@ -726,8 +613,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('src/img/team/ajaysir.jpg') }}" class="img-fluid" alt=""></div>
@@ -741,8 +626,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('src/img/team/isharsir.jpg') }}" class="img-fluid" alt=""></div>
@@ -756,7 +639,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('/src/img/team/riddhimam.jpg') }}" class="img-fluid" alt=""></div>
@@ -770,7 +652,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('src/img/team/zeelmaam.jpg') }}" class="img-fluid" alt=""></div>
@@ -784,15 +665,14 @@
                             </div>
                         </div>
                     </div>
-
                      <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('src/img/team/kinjal.jpg') }}" class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Kinjal Dave</h4>
-                                <span>Incubation Associate <br>Web developer</span>
+                                <span>Incubation Associate</span>
                                 <div class="social">
-                                    <a target="_blank" rel="noopener noreferrer" href=""><i class="bi bi-facebook"></i></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kinjal-dave-225741192/"><i class="bi bi-facebook"></i></a>
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kinjal-dave-225741192/"><i class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
@@ -808,15 +688,13 @@
         <section id="contact" class="contact">
             <div class="container" data-aos="fade-up" ">
 
-    <div class=" section-title ">
-        <h2>Contact</h2>
-        <p>Contact Us</p>
-      </div>
+            <div class=" section-title ">
+                <h2>Contact</h2>
+                <p>Contact Us</p>
+            </div>
 
       <div class="row ">
-
         <div class="col-lg-6 ">
-
           <div class="row ">
             <div class="col-md-12 ">
               <div class="info-box ">
@@ -840,9 +718,7 @@
               </div>
             </div>
           </div>
-
         </div>
-
         <div class="col-lg-6 mt-4 mt-lg-0 ">
           <form action="forms/contact.php " method="post " role="form " class="php-email-form ">
             <div class="row ">
@@ -864,15 +740,12 @@
               <div class="error-message "></div>
               <div class="sent-message ">Your message has been sent. Thank you!</div>
             </div>
-            <div class="text-center "><button type="submit ">Send Message</button></div>
+            <div class="text-center"><button type="submit ">Send Message</button></div>
           </form>
         </div>
-
       </div>
-
       </div>
     </section><!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   @endsection
