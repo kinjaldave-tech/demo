@@ -20,3 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('/associationship', [viewController::class, 'Associationship'])->name('associationship.view');
+Route::get('/webinar', [viewController::class, 'Webinar'])->name('webinar.view');
+Route::get('/achievements', [viewController::class, 'Achievements'])->name('achievements.view');
+Route::get('/startupmart', [viewController::class, 'Startupmart'])->name('startupmart.view');
+
+

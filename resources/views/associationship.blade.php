@@ -1,21 +1,28 @@
 @extends('layout.layout')
 
 @section('sp-css')
-  <link href="{{ asset('src/css/bene.css') }}" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="{{ asset('src/css/bene.css') }}" rel="stylesheet">
+{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> --}}
 @endsection
 
 @section('content')
+<!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero-associationship">
+        <div class="hero-container" data-aos="fade-up">
+            <h1>STUDENT ASSOCIATIONSHIP PROGRAM</h1>
+            <h2>Alone we can do so little, together we can do so much.</h2>
+            {{-- <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a> --}}
+        </div>
+    </section>
+    <!-- End Hero -->
 
-<section class="recent-completed-project section-gap">
+    <main id="main">
+        <section class="recent-completed-project section-gap">
             <div class="container">
-
                 <div class="row">
                     <div class="col-lg-12">
-
                         <div class="projects_inner row" id="lightgallery">
                             <div class="col-lg-6 col-sm-6 web all" data-src="img/project/p1.jpg">
-
                                 <div class="row justify-content-center">
                                     <div class="col-lg-12">
                                         <div class="main-title text-center">
@@ -28,12 +35,9 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="col-lg-6 col-sm-6 brand all creative">
-
                                 <img class="img-fluid w-100" src="{{  asset('src/img/association/main.jpg') }}" alt="">
-
                             </div>
                         </div>
                     </div>
@@ -53,7 +57,6 @@
                             <div class="col-lg-3 col-sm-6 web all">
                                 <div class="projects_item">
                                     <img class="img-fluid w-100" src="{{  asset('src/img/association/01.jpg') }}" alt="">
-
                                 </div>
                                 <div class="projects_text">
                                     <h4>
@@ -65,7 +68,6 @@
                             <div class="col-lg-3 col-sm-6 brand all creative">
                                 <div class="projects_item">
                                     <img class="img-fluid w-100" src={{  asset('src/img/association/02.jpg') }} alt="">
-
                                 </div>
                                 <div class="projects_text">
                                     <h4>
@@ -77,7 +79,6 @@
                             <div class="col-lg-3 col-sm-6 all">
                                 <div class="projects_item">
                                     <img class="img-fluid w-100" src="{{  asset('src/img/association/03.jpg') }}" alt="">
-
                                 </div>
                                 <div class="projects_text">
                                     <h4>
@@ -89,7 +90,6 @@
                             <div class="col-lg-3 col-sm-6 all print-mat">
                                 <div class="projects_item">
                                     <img class="img-fluid w-100" src="{{  asset('src/img/association/04.jpg') }}" alt="">
-
                                 </div>
                                 <div class="projects_text">
                                     <h4>
@@ -269,4 +269,6 @@
             </div>
         </section>
 
+    </main>
+    <!-- End #main -->
 @endsection

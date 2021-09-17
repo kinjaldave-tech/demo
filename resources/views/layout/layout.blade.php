@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/ic.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="src/img/ic.png" rel="icon">
+  {{-- <link href="assets/img/ic.png" rel="apple-touch-icon"> --}}
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -46,13 +46,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About Us</a></li>
         
 
 
-          <li><a class="nav-link scrollto " href="#portfolio">Startup Mart</a></li>
-          <li><a class="nav-link scrollto" href="#team">Achivements</a></li>
+          <li><a class="nav-link scrollto " href="{{ route('startupmart.view')}}">Startup Mart</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('achievements.view')}}">Achivements</a></li>
          
           <li class="dropdown"><a href="#"><span>Happenings</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -75,13 +75,13 @@
                             <li><a href="#">EDC Open House</a></li>
                             <li><a href="#">Startup Yatra Series</a></li>
                             <li><a href="{{ route('associationship.view')}}">Students Associateship Programme</a></li>
-                            <li><a href="#">Webinars and Workshops</a></li>
+                            <li><a href="{{ route('webinar.view')}}">Webinars and Workshops</a></li>
                 </ul>
               </li>
                         <li><a class="nav-link scrollto" href="#about">Resources</a></li>
             </ul>
           </li>
-           <li><a class="nav-link scrollto" href="#team">Contact Us</a></li>
+           <li><a class="nav-link scrollto" href="/#contact">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -92,6 +92,10 @@
     @show
 
     @section('sp-css')
+
+    @show
+
+    @section('sp-script')
 
     @show
 

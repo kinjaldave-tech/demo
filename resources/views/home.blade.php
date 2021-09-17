@@ -1,5 +1,16 @@
 @extends('layout.layout')
 
+@section('sp-css')
+
+
+@endsection
+
+@section('sp-script')
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+@endsection
+
  @section('content')
 
 <!-- Floating Social Media bar Starts -->
@@ -36,66 +47,18 @@
 <!-- Floating Social Media bar Ends -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero">
+    <section id="hero" class="hero-home">
         <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
             <h1>ENTREPRENEURSHIP DEVELOPMENT CENTRE</h1>
             <h2>Ideation - Innovation - Incubation</h2>
-            <div class="d-flex">
+            {{-- <div class="d-flex">
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>  
-            </div>
+            </div> --}}
         </div>
     </section>
     <!-- End Hero -->
 
     <main id="main">
-
-<!-- We will make a simple accordian with hover effects 
-The markup will have a list with images and the titles-->
-<div class="accordian">
-	<ul>
-		<li>
-			<div class="image_title">
-				<a href="#">KungFu Panda</a>
-			</div>
-			<a href="#">
-				<img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg"/>
-			</a>
-		</li>
-		<li>
-			<div class="image_title">
-				<a href="#">Toy Story 2</a>
-			</div>
-			<a href="#">
-				<img src="http://thecodeplayer.com/uploads/media/40Ly3VB.jpg"/>
-			</a>
-		</li>
-		<li>
-			<div class="image_title">
-				<a href="#">Wall-E</a>
-			</div>
-			<a href="#">
-				<img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
-			</a>
-		</li>
-		<li>
-			<div class="image_title">
-				<a href="#">Up</a>
-			</div>
-			<a href="#">
-				<img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
-			</a>
-		</li>
-		<li>
-			<div class="image_title">
-				<a href="#">Cars 2</a>
-			</div>
-			<a href="#">
-				<img src="http://thecodeplayer.com/uploads/media/8k3N3EL.jpg"/>
-			</a>
-		</li>
-	</ul>
-</div>
-
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
@@ -130,7 +93,6 @@ The markup will have a list with images and the titles-->
                                     <p>Mentors</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -183,17 +145,6 @@ The markup will have a list with images and the titles-->
                         </div>
                     </div>
                     </section>
-                    <!-- End Specials Section -->
-                        {{-- <ul>
-                            <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bx bx-check-double"></i> Voluptate repellendus pariatur reprehenderit corporis sint.</li>
-                            <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                        </ul>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                            id est laborum
-                        </p> --}}
                     </div>
                 </div>
             </div>
@@ -203,8 +154,8 @@ The markup will have a list with images and the titles-->
         <section id="services" class="services section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>Services</h2>
-                    <p>Check our Services</p>
+                    <h2>Offerings</h2>
+                    <p>Check Our Offerings</p>
                 </div>
                 <div class="row" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-md-6">
@@ -628,10 +579,10 @@ The markup will have a list with images and the titles-->
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
-                            <div class="pic"><img src="{{  asset('src/img/team/isharsir.jpg') }}" class="img-fluid" alt=""></div>
+                            <div class="pic"><img src="{{  asset('src/img/team/azharsir.jpg') }}" class="img-fluid" alt=""></div>
                             <div class="member-info">
-                                <h4>Mr. Isharahmad Pathan</h4>
-                                <span>Manager-Incubation and<br>Operations</span>
+                                <h4>Mr. Azhar Patel</h4>
+                                <span>Manager-Incubation</span>
                                 <div class="social">
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/isharahmad.pathan"><i class="bi bi-facebook"></i></a>
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isharahmad-pathan-798b4a159/"><i class="bi bi-linkedin"></i></a>
@@ -689,7 +640,7 @@ The markup will have a list with images and the titles-->
             <div class="container" data-aos="fade-up" ">
 
             <div class=" section-title ">
-                <h2>Contact</h2>
+                <h2>We'd love to hear from you!</h2>
                 <p>Contact Us</p>
             </div>
 
@@ -746,6 +697,40 @@ The markup will have a list with images and the titles-->
       </div>
       </div>
     </section><!-- End Contact Section -->
+
+<section id="partners" class="partners">
+    <div class="container" data-aos="fade-up" ">
+
+            <div class=" section-title ">
+                <h2>Partners</h2>
+                <p>Meet Our Partners</p>
+            </div>
+            <section class="customer-logos slider">
+            <div class="slide"><img src="{{  asset('src/img/partners/01.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/02.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/03.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/04.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/05.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/06.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/07.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/08.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/09.jpg') }}"></div>
+            </section>
+            <section class="customer-logos slider">
+            <div class="slide"><img src="{{  asset('src/img/partners/10.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/11.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/12.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/13.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/14.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/15.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/16.jpg') }}"></div>
+            <div class="slide"><img src="{{  asset('src/img/partners/17.jpg') }}"></div>
+            </section>
+
+    </div>
+</section>
+        <!--partners end-->
+
   </main><!-- End #main -->
 
   @endsection

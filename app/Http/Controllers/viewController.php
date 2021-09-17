@@ -12,4 +12,13 @@ class viewController extends Controller
     public function Associationship(){
         return view('associationship');
     }
+    public function Webinar(){
+        return view('webinar');
+    }
+    public function Achievements(){
+        return view('achievements');
+    }
+    public function Startupmart(){
+        return view('startupmart');
+    }
 }
