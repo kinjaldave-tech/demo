@@ -286,7 +286,8 @@
                 
                 .navbar .dropdown .dropdown ul {
                     top: 0;
-                    left: calc(100% - 30px);
+                    left: auto !important;
+                    right: 200px !important;
                     visibility: hidden;
                 }
                 
@@ -421,7 +422,7 @@
                 }
                 
                 .hero-startup {
-                    background: url("../img/startupback.jpg") top center;
+                    background: url("../img/hero-home.jpg") top center;
                 }
                 
                 .hero-achievements {
@@ -430,6 +431,10 @@
                 
                 .hero-webinar {
                     background: url("../img/webinar-bg.jpg") top center;
+                }
+                
+                .hero-resources {
+                    background: url("../img/resources-bg.jpg") top center;
                 }
                 
                 #hero {
@@ -612,10 +617,10 @@
                 .about .count-box span {
                     font-size: 28px;
                     line-height: 25px;
-                    display: block;
+                    display: inline;
                     font-weight: 700;
                     color: #365870;
-                    margin-left: 60px;
+                    margin-left: 10px;
                 }
                 
                 .about .count-box p {
@@ -987,7 +992,7 @@
                 
                 .testimonials {
                     padding: 80px 0;
-                    background: url("../img/testimonials-bg.jpg") no-repeat;
+                    background: url("../img/about-boxes-bg.jpg") no-repeat;
                     background-position: center center;
                     background-size: cover;
                     position: relative;
@@ -1000,7 +1005,7 @@
                     right: 0;
                     top: 0;
                     bottom: 0;
-                    background: rgba(13, 20, 26, 0.7);
+                    background: rgba(255, 255, 255, 0.9);
                 }
                 
                 .testimonials .section-header {
@@ -1009,7 +1014,7 @@
                 
                 .testimonials .testimonial-item {
                     text-align: center;
-                    color: #fff;
+                    color: rgb(0, 0, 0);
                 }
                 
                 .testimonials .testimonial-item .testimonial-img {
@@ -1023,12 +1028,12 @@
                     font-size: 20px;
                     font-weight: bold;
                     margin: 10px 0 5px 0;
-                    color: #fff;
+                    color: rgb(0, 0, 0);
                 }
                 
                 .testimonials .testimonial-item h4 {
                     font-size: 14px;
-                    color: #ddd;
+                    color: rgb(0, 0, 0);
                     margin: 0 0 15px 0;
                 }
                 
@@ -1054,7 +1059,7 @@
                 .testimonials .testimonial-item p {
                     font-style: italic;
                     margin: 0 auto 15px auto;
-                    color: #eee;
+                    color: rgb(0, 0, 0);
                 }
                 
                 @media (min-width: 992px) {
@@ -1186,7 +1191,7 @@
                 }
                 
                 .portfolio-details .portfolio-details-slider img {
-                    width: 100%;
+                    width: 50%;
                 }
                 
                 .portfolio-details .portfolio-details-slider .swiper-pagination {

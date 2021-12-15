@@ -12,40 +12,6 @@
 @endsection
 
  @section('content')
-
-<!-- Floating Social Media bar Starts -->
-<div class="float-sm">
-  <div class="fl-fl float-fb">
-    <i class="fa fa-facebook"></i>
-    <a href="" target="_blank"> Like us!</a>
-  </div>
-  <div class="fl-fl float-tw">
-    <i class="fa fa-twitter"></i>
-    <a href="" target="_blank">Follow us!</a>
-  </div>
-  <div class="fl-fl float-in">
-    <i class="fa fa-linkedin"></i>
-    <a href="" target="_blank">Connect us!</a>
-  </div>
-  <div class="fl-fl float-yt">
-    <i class="fa fa-youtube"></i>
-    <a href="" target="_blank">Subscribe us!</a>
-  </div>
-  <div class="fl-fl float-ig">
-    <i class="fa fa-instagram"></i>
-    <a href="" target="_blank">Follow us!</a>
-  </div>
-  <div class="fl-fl float-em">
-    <i class="fa fa-envelope"></i>
-    <a target="_blank" rel="noopener noreferrer" href="mailto:edc@paruluniversity.ac.in">Mail us!</a>
-  </div>
-  <div class="fl-fl float-tg">
-    <i class="fa fa-telegram"></i>
-    <a href="" target="_blank">Join us!</a>
-  </div>
-</div>
-<!-- Floating Social Media bar Ends -->
-
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero-home">
         <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
@@ -65,31 +31,47 @@
                 <div class="row justify-content-end">
                     <div class="col-lg-11">
                         <div class="row justify-content-end">
-                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                            <div class="col-lg-4 col-md-5 col-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
-                                    <i class="bi bi-briefcase"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="110" data-purecounter-duration="3" class="purecounter"></span>
-                                    <p>Startup Supported</p>
+                                    <i class="bi bi-lightbulb"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="3" class="purecounter"></span><span>+</span>
+                                    <p>Startups & Innovations supported</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                            <div class="col-lg-4 col-md-5 col-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-gear-wide-connected"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="3" class="purecounter"></span>
+                                    <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="3" class="purecounter"></span><span>+</span>
                                     <p>Industry Connect</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                            <div class="col-lg-4 col-md-5 col-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-cash-coin"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="3" class="purecounter"></span>
-                                    <p>Revenue Generated</p>
+                                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="3" class="purecounter"></span><span>Cr+</span>
+                                    <p>Annual Revenue Generation</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                        {{-- </div>
+                        <div class="row justify-content-end"> --}}
+                            <div class="col-lg-4 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-piggy-bank"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="3" class="purecounter"></span><span>Cr+</span>
+                                    <p>Funds Raised</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-briefcase"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="3" class="purecounter"></span><span>+</span>
+                                    <p>Employment Generated</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-6 d-md-flex align-items-md-stretch">
                                 <div class="count-box">
                                     <i class="bi bi-person"></i>
-                                    <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="3" class="purecounter"></span>
+                                    <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="3" class="purecounter"></span><span>+</span>
                                     <p>Mentors</p>
                                 </div>
                             </div>
@@ -98,18 +80,18 @@
                 </div>
                 <div class="section-title">
                     <h2>About us</h2>
-                    <p>ENTREPRENEURSHIP DEVELOPMENT CENTER</p>
+                    <p>ENTREPRENEURSHIP DEVELOPMENT CENTRE</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-6 video-box align-self-baseline" data-aos="zoom-in" data-aos-delay="100">
                         <img src="{{  asset('src/img/about.jpg') }}" class="img-fluid" alt="">
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+                        <a href="https://www.youtube.com/watch?v=bXRR-hANGVU" class="glightbox play-btn mb-4"></a>
                     </div>
 
                     <div class="col-lg-6 pt-3 pt-lg-0 content">
                         <h3>Ideation - Innovation - Incubation</h3>
                         <p>
-                            The Entrepreneurship Development Center is one of the creative hubs at Parul University that nurtures the Entrepreneurial endeavors of all students. A team of 10 Full time Dedicated Incubation Managers are working for the Entrepreneurship Development Center to Strengthen the Regional Eco System Promoting Innovation and Entrepreneurship Culture in the University is the Key Objective of EDC.
+                            The Entrepreneurship Development Centre is one of the creative hubs at Parul University that nurtures the Entrepreneurial endeavors of all students. A team of full time Dedicated Incubation Managers are working for the Entrepreneurship Development Centre to Strengthen the Regional Eco System Promoting Innovation and Entrepreneurship Culture in the University.
                         </p>
                         <!-- ======= Specials Section ======= -->
                     <section id="specials" class="specials">
@@ -251,14 +233,14 @@
                     </li>
                     <li class="nav-item col-2">
                         <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
-                            <i class="ri-store-line"></i>
+                            <i class="ri-stack-line"></i>
                             <h4 class="d-none d-lg-block">Startup Demo Day</h4>
                         </a>
                     </li>
                     <li class="nav-item col-2">
                         <a class="nav-link" data-bs-toggle="tab" href="#tab-5">
-                            <i class="ri-store-line"></i>
-                            <h4 class="d-none d-lg-block">National Forum on Social Entrepreneurship</h4>
+                            <i class="ri-discuss-line"></i>
+                            <h4 class="d-none d-lg-block">National Forum on Entrepreneur</h4>
                         </a>
                     </li>
                     <li class="nav-item col-2">
@@ -273,12 +255,11 @@
                     <div class="tab-pane active show" id="tab-1">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Vadodara Hackathon</h3>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                
-                                <p>A nationwide initiative to provide students a platform to solve some of the pressing problems faced by Industries, Government and Other private players, and thus inculcate a culture of product innovation and a mindset of problem-solving.</p>
+                                <h2>Vadodara Hackathon</h2>
+                                <p>
+                                    A nationwide initiative to provide students a platform to solve some of the pressing problems faced by Industries, Government and Other private players, and thus inculcate a culture of product innovation and a mindset of problem-solving.
+                                </p> 
+                                <p>First ever hybrid hackathon (Virtual + Physical) - Support for incubation, commercialization and IP - Mentoring in Tech as well as Business models - Versatile Problem Areas - Chance to be a part of Student Developer Communities</p><p>Gov. Bodies, Municipal Corporations - Incubators, Angel Investors - Business Chambers /Associations /Forums - Small - Large Scale Industries - Student Developer</p>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
                                 <img src="{{  asset('src/img/flagship/fl1.png') }}" alt="" class="img-fluid">
@@ -288,10 +269,7 @@
                     <div class="tab-pane" id="tab-2">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Women's Startup Meet</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
+                                <h2>Women's Startup Meet</h2>
                                 <p>
                                     Women's Start-up Meet is an initiative by EDC to help aspiring women entrepreneurs gain an edge by building their skills, network and gaining hands-on experience. This event will help female students gain the skills to
                                     come up with an idea which is aligned with their strengths, interest, and passion, and can have some commercial potential.
@@ -305,10 +283,7 @@
                     <div class="tab-pane" id="tab-3">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Vadodara Start-up Festival</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                </p>
+                                <h2>Vadodara Start-up Festival</h2>
                                 <p>
                                    Vadodara Start-up Festival is here to achieve just that by providing a platform to network and learn from the leading Entrepreneurs and Mentors. It empower the entrepreneurship qualities as well as knowledge about start-ups in Students and give opportunities to new entrepreneurs.
                                 </p>
@@ -321,11 +296,7 @@
                     <div class="tab-pane" id="tab-4">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Startup Demo Day</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                                    id est laborum
-                                </p>
+                                <h2>Startup Demo Day</h2>
                                 <p>
                                     Around 10-12 promising startups would be selected and provided an opportunity for pitching their propositions at Vadodara Startup Demo Day, who would be judged by an esteemed panel, which could be a precursor to the primary level screening for Vadodara Startup Studio's Launchpad & Acceleration Program.
                                 </p>
@@ -339,10 +310,7 @@
                     <div class="tab-pane" id="tab-5">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>National Forum on Social Entrepreneurship</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
+                                <h2>National Forum on Social Entrepreneurship</h2>
                                 <p>
                                     "National Forum on Social Entrepreneurship(NFSE)" will bring together Experts, Policy makers, accomplished Entrepreneurs, Funding agencies under one single platform, to address & solve the pressing issues of the nation
                                     and the social entrepreneurs trying to tackle them.
@@ -357,10 +325,7 @@
                      <div class="tab-pane" id="tab-6">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Vadodara Toycathon</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
+                                <h2>Vadodara Toycathon</h2>
                                 <p>
                                     Vadodara Toycathon is a stepping stone of Mind to Market innovation challenge for Toy Industry. This Ideathon cum Hackathon is a propeller of the Atmanirbhar Bharat in Toy Sector.
                                 </p>
@@ -581,11 +546,11 @@
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <div class="pic"><img src="{{  asset('src/img/team/azharsir.jpg') }}" class="img-fluid" alt=""></div>
                             <div class="member-info">
-                                <h4>Mr. Azhar Patel</h4>
+                                <h4>Mr. Azahar Patel</h4>
                                 <span>Manager-Incubation</span>
                                 <div class="social">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/isharahmad.pathan"><i class="bi bi-facebook"></i></a>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isharahmad-pathan-798b4a159/"><i class="bi bi-linkedin"></i></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/patel.azhar.54"><i class="bi bi-facebook"></i></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/patel-azahar-b36976167/"><i class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -40,20 +40,17 @@
     <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">EDC</a></h1>
+      {{-- <h1 class="logo"><a href="index.html">EDC</a></h1> --}}
       <!-- Uncomment below if you prefer to use an image logo -->
-    
+      <a href="/" class="logo"><img src="{{  asset('src/img/logo.png') }}" alt="" class="img-fluid"></a>
+
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-        
-
-
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About Us</a></li>
           <li><a class="nav-link scrollto " href="{{ route('startupmart.view')}}">Startup Mart</a></li>
-          <li><a class="nav-link scrollto" href="{{ route('achievements.view')}}">Achivements</a></li>
-         
+          <li><a class="nav-link scrollto" href="{{ route('achievements.view')}}">Achievements</a></li>
           <li class="dropdown"><a href="#"><span>Happenings</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Flagship Events</span> <i class="bi bi-chevron-right"></i></a>
@@ -66,19 +63,18 @@
                   <li><a target="_blank" rel="noopener noreferrer" href="http://vadodarainnofest.paruluniversity.ac.in">Toycathon</a></li>
                 </ul>
               </li>
-              
               <li class="dropdown"><a href="#"><span>Initiatives</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Entrepreneurship Sensitisation Campaign</a></li>
-                            <li><a href="#">EDC Open Day</a></li>
-                            <li><a href="#">Idea Lounge</a></li>
-                            <li><a href="#">EDC Open House</a></li>
-                            <li><a href="#">Startup Yatra Series</a></li>
-                            <li><a href="{{ route('associationship.view')}}">Students Associateship Programme</a></li>
+                            <li><a href="{{ route('startupmart.view')}}">EDC Open Day</a></li>
+                            <li><a href="{{ route('startupmart.view')}}">Idea Lounge</a></li>
+                            <li><a href="{{ route('startupmart.view')}}">EDC Open House</a></li>
+                            <li><a href="{{ route('startupmart.view')}}">Startup Yatra Series</a></li>
+                            <li><a href="{{ route('startupmart.view')}}">Students Associateship Programme</a></li>
                             <li><a href="{{ route('webinar.view')}}">Webinars and Workshops</a></li>
                 </ul>
               </li>
-                        <li><a class="nav-link scrollto" href="#about">Resources</a></li>
+                            <li><a class="nav-link scrollto" href="{{ route('resources.view')}}">Resources</a></li>
             </ul>
           </li>
            <li><a class="nav-link scrollto" href="/#contact">Contact Us</a></li>
@@ -89,6 +85,40 @@
     </div>
   </header>
 <!-- ======= End Header ===== -->
+
+<!-- Floating Social Media bar Starts -->
+<div class="float-sm">
+  <div class="fl-fl float-fb">
+    <i class="fa fa-facebook"></i>
+    <a href="https://www.facebook.com/edcparuluniversity/" target="_blank"> Like us!</a>
+  </div>
+  <div class="fl-fl float-tw">
+    <i class="fa fa-twitter"></i>
+    <a href="https://twitter.com/edc_pu" target="_blank">Follow us!</a>
+  </div>
+  <div class="fl-fl float-in">
+    <i class="fa fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/edc-parul-university-8a5018119/" target="_blank">Connect us!</a>
+  </div>
+  <div class="fl-fl float-yt">
+    <i class="fa fa-youtube"></i>
+    <a href="" target="_blank">Subscribe us!</a>
+  </div>
+  <div class="fl-fl float-ig">
+    <i class="fa fa-instagram"></i>
+    <a href="https://www.instagram.com/edc_pu/" target="_blank">Follow us!</a>
+  </div>
+  <div class="fl-fl float-em">
+    <i class="fa fa-envelope"></i>
+    <a target="_blank" rel="noopener noreferrer" href="mailto:edc@paruluniversity.ac.in">Mail us!</a>
+  </div>
+  <div class="fl-fl float-tg">
+    <i class="fa fa-telegram"></i>
+    <a href="https://t.me/edcatpu" target="_blank">Join us!</a>
+  </div>
+</div>
+<!-- Floating Social Media bar Ends -->
+
     @show
 
     @section('sp-css')
@@ -112,9 +142,9 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>EDC</h3>
+              <a href="/" class="logo"><img src="{{  asset('src/img/logofooter.png') }}" alt="" class="img-fluid" style="margin-bottom:20px;"></a>
               <p>
-                Entrepreneurship Development Centre<br> Parul University<br>
+                Entrepreneurship Development Centre<br>
                P.O.Limda, Ta.Waghodia – 391760 Dist. Vadodara, Gujarat (India)<br><br>
                 <strong>Phone :</strong> 0266-8260350<br>
                 <strong>Email :</strong> edc@paruluniversity.ac.in<br>
@@ -131,28 +161,33 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ route('startupmart.view')}}">StartupMart</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ route('achievements.view')}}">Achievements</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{ route('webinar.view')}}">Happenings</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://vadodarainnofest.paruluniversity.ac.in">Flagship Events</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#contact">Contact Us</a></li>
+
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://vadodarainnofest.paruluniversity.ac.in/programs/hackathon">Vadodara Hackathon</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://vadodarainnofest.paruluniversity.ac.in/programs/women-startup">Women's Startup Meet</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://vadodarainnofest.paruluniversity.ac.in/programs/vsf">Vadodara Startup Festival</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://vadodarainnofest.paruluniversity.ac.in">Startup Demo Day</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://vadodarainnofest.paruluniversity.ac.in">National Forum on Social Entrepreneurship</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://vadodarainnofest.paruluniversity.ac.in">Vadodara Toycathon</a></li>
+
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>

@@ -21,4 +21,7 @@ class viewController extends Controller
     public function Startupmart(){
         return view('startupmart');
     }
+    public function Resources(){
+        return view('resources');
+    }
 }

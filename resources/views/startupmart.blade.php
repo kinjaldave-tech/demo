@@ -6,8 +6,9 @@
 
     <section id="hero" class="hero-startup">
         <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
-            <h1>OUR INCUBATED STARTUPS</h1>
-            <h2>In the end, a vision without the ability to execute it is probably a hallucination.</h2>
+            <h1>Coming Soon</h1>
+			<h2>Stay tuned for something amazing!</h2>
+            {{-- <h2>In the end, a vision without the ability to execute it is probably a hallucination.</h2> --}}
             {{-- <div class="d-flex">
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>  
             </div> --}}
